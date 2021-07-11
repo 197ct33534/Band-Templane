@@ -8,10 +8,16 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+.container-fluid {
+    overflow: hidden;
+}
+
 .nav-header {
     background-color: #000;
     height: 45px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 .nav-list {
@@ -75,7 +81,6 @@ html {
     height: 45px;
     line-height: 45px;
     text-align: center;
-    padding-right: 10px;
     cursor: pointer;
 }
 
@@ -86,6 +91,7 @@ html {
 .slider-bar {
     position: relative;
     transition: all 0.3s linear;
+    top: 45px;
 }
 
 .slider-bar img {

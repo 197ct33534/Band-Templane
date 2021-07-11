@@ -102,8 +102,8 @@ html {
 .slider-heading {
     color: #fff;
     position: absolute;
-    bottom: 15%;
-    left: 52%;
+    bottom: 13%;
+    left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-weight: block;
@@ -112,4 +112,170 @@ html {
 
 .slider-heading h3 {
     text-transform: capitalize;
+}
+
+.main-band {
+    margin: 64px auto;
+    max-width: 800px;
+}
+
+.main-band h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-band h6 {
+    font-style: oblique;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.6;
+    padding: 10px 0;
+}
+
+.main-band p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-band {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.card-band h4 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 0 10px 0;
+}
+
+.card-band img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+/* tour band */
+
+.bg-black {
+    background-color: #000;
+}
+
+.shows {
+    max-width: 800px;
+    align-items: center;
+}
+
+.tour-band {
+    margin-top: 80px;
+}
+
+.tour-band h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.tour-band>div {
+    color: #888888;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+}
+
+.book {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 38px;
+}
+
+.book>li {
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #DDDDDD;
+    font-size: 15px;
+    color: #757575;
+    position: relative;
+}
+
+.book>li>span {
+    background-color: #F44336;
+    color: #fff;
+    padding: 3px 12px;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.book>li>button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    float: right;
+}
+
+
+/* cart-ticket */
+
+.card-ticket {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.card-ticket h6 {
+    padding: 15px 0 0 15px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.card-ticket p {
+    padding: 5px 0 0 15px;
+    font-size: 15px;
+}
+
+.show-day {
+    color: #666666;
+}
+
+.card-ticket button {
+    margin: 0 0 15px 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+}
+
+.card-ticket button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.warp-card {
+    margin: 0 -30px;
+}
+
+@media (max-width: 767px) {
+    .warp-card {
+        padding: 0 15px;
+    }
+    .slider-heading {
+        display: none
+    }
 }

@@ -417,7 +417,6 @@ footer>i {
     max-width: 1130px;
     transition: all 0.3s ease-in;
     animation: showForm 0.3s ease-in;
-    top: 30%;
     opacity: 1;
     transform: translateY(30%);
 }
@@ -425,13 +424,11 @@ footer>i {
 @keyframes showForm {
     from {
         opacity: 0;
-        top: 0;
         transform: translateY(0);
     }
     to {
         opacity: 1;
-        top: 30%;
-        transform: translateY(30%);
+        transform: translateY(25%);
     }
 }
 

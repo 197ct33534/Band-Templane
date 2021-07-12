@@ -25,7 +25,7 @@ function slideBar() {
         }
     }
 }
-
+//slide 
 function test() {
     setInterval(() => {
         var index = slideBar();
@@ -39,6 +39,7 @@ function test() {
     }, 4000)
 }
 test()
+    // navbar
 const menu = document.getElementById("bar-menu");
 const header = document.querySelector(".nav-header");
 const height = header.clientHeight;
@@ -62,19 +63,25 @@ if (checkBar) {
 }
 
 liElement.forEach((element, index) => {
-    element.onclick = function() {
-        header.style.height = null;
-    }
-})
-
+        element.onclick = function() {
+            header.style.height = null;
+        }
+    })
+    //  click vào btn will show form
 const formPay = document.querySelector(".form-pay");
 const card = document.querySelectorAll(".card-ticket>button");
 card.forEach((element) => {
-    element.onclick = function() {
-        formPay.style.display = "block"
+        element.onclick = function() {
+            formPay.style.display = "block"
+        }
+    })
+    // exit form
+const exit = document.querySelectorAll(".exit");
+formPay.addEventListener("click", e => {
+    if (e.target === e.currentTarget) {
+        e.target.style.display = "none"
     }
 })
-const exit = document.querySelectorAll(".exit");
 
 exit.forEach((element) => {
     element.onclick = function() {

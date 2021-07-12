@@ -23,12 +23,12 @@
         <div class="row no-gutters">
             <nav class="nav-header col-md-12 ">
                 <ul class="nav-list  list-unstyled">
-                    <li class="">Home</li>
-                    <li>Band</li>
-                    <li>Tour</li>
-                    <li>ConTact</li>
-                    <li>More
-                        <i class="header-Idown fas fa-chevron-down"></i>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">tour</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#">More<i class="header-Idown fas fa-chevron-down"></i></a>
+
                         <ul class="sub-menu list-unstyled">
                             <li>
                                 <a href="">Merchandise</a>
@@ -43,7 +43,8 @@
                     </li>
                 </ul>
                 <div class="btn-search">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search" id="bar-search"></i>
+                    <i class="fas fa-bars" id="bar-menu"></i>
                 </div>
             </nav>
         </div>
@@ -59,7 +60,7 @@
         </div>
     </div>
     <!-- body -->
-    <main class="container">
+    <main class="container" id="band">
         <div class="row">
             <div class="main-band col-md-12">
                 <h2>the band</h2>
@@ -84,7 +85,7 @@
             </div>
         </div>
     </main>
-    <main class="container-fluid p-0 bg-black">
+    <main class="container-fluid p-0 bg-black" id="tour">
         <div class="container shows">
             <div class="row ">
                 <div class="tour-band col-md-12">
@@ -131,10 +132,94 @@
                 </div>
             </div>
         </div>
+        <div id="contact"></div>
     </main>
+    <!-- contact -->
 
+    <div class="container contact">
+        <div class="row ">
+            <div class="col-md-12">
+                <h2 class="heading">
+                    CONTACT
+                </h2>
+                <p>Fan? Drop a note!</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Chicago, US</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Phone: +00 151515</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: mail@mail.com</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 ">
+                <div class="row form-contact warp-input">
 
+                    <input type="text" class="col-md-6 col-sm-12" placeholder="Name">
+                    <input type="text" class="col-md-6 col-sm-12" placeholder="Email">
+                    <input type="message" class="col-md-12 col-sm-12" placeholder="Message">
+                    <div class="pr-0 col-md-12 col-sm-12"><button class="btn-send">send</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid p-0 mx-0 bg-gray">
+        <div class="row ">
+            <img class=" img-fluid " src="./img/map.jpg" style="width: 100%;"></img>
+
+        </div>
+        <div class="container ">
+            <div class="row wrap-icon">
+                <div class="col-md-12 ">
+                    <div class="footer-icon">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <footer>Powered by <i>w3.css </i></footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-pay container-f p-0 m-0">
+        <div class="container ">
+            <div class="row box">
+
+                <div class="col-md-12 heading"><button class="exit-pay exit"><i class="fas fa-times"></i></button>
+                    <h1><i class="fas fa-suitcase"></i>Tickets</h1>
+                </div>
+                <div class="col-md-12">
+                    <form action="" class="input-info">
+                        <div class="form-group">
+                            <label for=""><i class="fas fa-shopping-cart"></i>Tickets, $15 per person</label>
+                            <input type="text" class="form-control" placeholder="How many?">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><i class="fas fa-user-tie"></i> Send To</label>
+                            <input type="text" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-lg submit-pay">PAY<i class="fas fa-check"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6"><button class="btn-exit exit">Close <i class="fas fa-times"></i></button></div>
+                <div class="col-md-6 help-pay">Need
+                    <a href="#"> <u>help?</u> </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

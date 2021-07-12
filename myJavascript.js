@@ -39,3 +39,45 @@ function test() {
     }, 4000)
 }
 test()
+const menu = document.getElementById("bar-menu");
+const header = document.querySelector(".nav-header");
+const height = header.clientHeight;
+const liElement = document.querySelectorAll(".nav-list>li");
+var checkBar = false;
+menu.onclick = function() {
+    menu.parentElement.backgroundColor = "#ccc";
+    if (header.clientHeight == height) {
+        header.style.height = 'auto';
+        checkBar = true;
+
+    } else {
+        header.style.height = null;
+    }
+}
+
+if (checkBar) {
+    menu.style.color = "#000";
+} else {
+    menu.style.color = "#fff";
+}
+
+liElement.forEach((element, index) => {
+    element.onclick = function() {
+        header.style.height = null;
+    }
+})
+
+const formPay = document.querySelector(".form-pay");
+const card = document.querySelectorAll(".card-ticket>button");
+card.forEach((element) => {
+    element.onclick = function() {
+        formPay.style.display = "block"
+    }
+})
+const exit = document.querySelectorAll(".exit");
+
+exit.forEach((element) => {
+    element.onclick = function() {
+        formPay.style.display = "none"
+    }
+})
